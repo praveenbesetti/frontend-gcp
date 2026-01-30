@@ -3,7 +3,7 @@ name: Deploy Frontend to GCS
 on:
   push:
     branches:
-      - main  # Triggered when you push to the main branch
+      - master  # Triggered when you push to the main branch
 
 jobs:
   deploy:
