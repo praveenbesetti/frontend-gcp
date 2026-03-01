@@ -10,7 +10,7 @@ function App() {
    const res= axios.get('http://api-docker-backend.duckdns.org/api/users')
       .then(res => setItems(res.data))
       .catch(err => console.error(err));
-    console.log(res)
+    console.log("response",res)
   }, []);
 
   const handleSubmit = async (e) => {
