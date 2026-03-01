@@ -7,9 +7,10 @@ function App() {
 
   // Fetch data on load
   useEffect(() => {
-    axios.get('http://api-docker-backend.duckdns.org/api/users')
+   const res= axios.get('http://api-docker-backend.duckdns.org/api/users')
       .then(res => setItems(res.data))
       .catch(err => console.error(err));
+    console.log(res)
   }, []);
 
   const handleSubmit = async (e) => {
