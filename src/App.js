@@ -11,7 +11,7 @@ function App() {
       .then(res => setItems(res.data))
       .catch(err => console.error(err));
   }, []);
- console.log("sssrgsrgrsrggfh")
+ console.log("sssrgsrsrggfh")
   const handleSubmit = async (e) => {
     e.preventDefault();
     const res = await axios.post('http://api-docker-backend.duckdns.org/api/users', formData);
